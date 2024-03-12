@@ -1,0 +1,404 @@
+@font-face {
+  font-family: "HELVETICANEUE";
+  src: url(font/HELVETICANEUELTGEO-45LIGHTS.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  background-color: #0a22f4;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 10%;
+  font-family: "HELVETICANEUE";
+  top: 0;
+  left: 0;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  margin-right: 10px;
+}
+
+nav ul li:nth-child(1) a {
+  position: relative;
+}
+nav ul li:nth-child(1) a::after {
+  content: "";
+  position: absolute;
+  left: 25%;
+  bottom: -15px;
+  border: 1px solid #fff;
+  width: 50%;
+}
+
+.btn-1 {
+  padding: 13px 18px;
+  border: none;
+  border-radius: 28px;
+  font-family: "HELVETICANEUE";
+  font-weight: bold;
+  cursor: pointer;
+}
+
+main {
+  background-color: #0a22f4;
+  padding: 20px;
+  height: 40vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "HELVETICANEUE";
+
+  margin-top: 10rem;
+  gap: 20px;
+}
+
+.img-1 {
+  max-width: 1079px;
+  z-index: 2;
+}
+
+.container h1 {
+  margin-right: 8cm;
+}
+
+.wrapper-2 p {
+  font-size: 16px;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+.wrapper-2 {
+  max-width: 851px;
+}
+
+.wrapper-1 img {
+  max-width: 219px;
+  max-height: 219px;
+  padding: 10px 10px 10px 10px;
+}
+
+.btn-2 {
+  padding: 15px 25px;
+  min-width: 261px;
+  border: none;
+  border-radius: 28px;
+  background-color: #0a22f4;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+@media (width < 1024px) {
+  nav {
+    display: none;
+  }
+  header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4vh;
+  }
+  .logo {
+    margin-top: 10rem;
+  }
+  main {
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+  }
+  .img-1 {
+    max-width: 734px;
+    max-height: 610px;
+  }
+  .container h1 {
+    margin-right: 10rem;
+    font-size: 22px;
+  }
+  .wrapper-2 p {
+    font-size: 14px;
+  }
+  .wrapper-1 img {
+    max-width: 199px;
+    max-height: 199px;
+  }
+  .btn-2 {
+    padding: 10px 15px;
+  }
+
+  .container-2 {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+  .wrapper-3 h2 {
+    position: absolute;
+    top: -5rem;
+    left: 8rem;
+    color: #fff;
+  }
+  .container-2 {
+    position: relative;
+  }
+  .flex form {
+    display: flex;
+    flex-direction: column;
+  }
+  .btn-3 {
+    align-self: auto;
+  }
+  .wrapper-3 p {
+    display: none;
+  }
+  .wrapper-3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .frame {
+    display: none;
+  }
+
+  .tel .b {
+    fill: #fff;
+  }
+  .email .b {
+    fill: #fff;
+  }
+
+  .div-2 {
+    display: flex;
+    align-items: center;
+  }
+  iframe {
+    margin-left: 25px;
+  }
+  .menu-div {
+    display: unset;
+  }
+  .menu-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+}
+
+@media (width < 665px) {
+  .img-1 {
+    max-width: 500px;
+    max-height: 400px;
+  }
+  .wrapper-1 img {
+    width: 162px;
+    height: 110px;
+    border-radius: 15px;
+  }
+  .wrapper-2 p {
+    font-size: 12px;
+  }
+  main {
+    height: 26vh;
+  }
+
+  .wrapper-2 p:nth-child(2) {
+    display: none;
+  }
+  .wrapper-2 p:nth-child(3) {
+    display: none;
+  }
+  .container h1 {
+    font-size: 15px;
+  }
+  .container {
+    max-height: 80vh;
+  }
+}
+
+/* footer */
+
+footer {
+  background-color: blue;
+  width: 100%;
+  height: auto;
+  padding: 20px 5%;
+  font-family: "HELVETICANEUE";
+  /* აქ პრომლება ვერ გავიგე ზემოთ იტანდა მთლიანად  footers */
+  margin-top: 100rem;
+}
+
+.container-2 {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 5rem;
+  flex-shrink: 0;
+  flex-basis: 100%;
+}
+
+iframe {
+  border-radius: 6px;
+  border: none;
+}
+
+.wrapper-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+.text {
+  font-size: 16px;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+.div-2 {
+  position: relative;
+}
+.div-3 {
+  position: relative;
+}
+/* არ ვიცი ეს რამდენად საჭირ არის მაგრამ მაინც ვაკეთებ */
+@media (width > 1325px) {
+  .tel {
+    position: absolute;
+    bottom: 32%;
+    left: 12%;
+  }
+  .email {
+    position: absolute;
+    bottom: 32%;
+    left: 9%;
+  }
+  .menu-div {
+    display: none;
+  }
+  .btn-3 {
+    align-self: flex-end;
+  }
+  iframe {
+    box-shadow: -10px 10px 0px rgb(255, 255, 255);
+  }
+}
+.div-1 {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-top: 5rem;
+  font-weight: bold;
+}
+
+.div-1 a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.div-1 div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.flex form {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+}
+.form-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-row label {
+  font-weight: bold;
+  color: #ffffffe6;
+}
+
+.form-row label {
+  font-size: 13px;
+}
+
+.form-row input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(135, 207, 235, 0.489);
+  width: 290px;
+  outline: none;
+  padding: 5px;
+}
+
+.form-row input[type="text"] {
+  color: #fff;
+}
+.form-row input[type="email"] {
+  color: #fff;
+}
+.form-row input[type="tel"] {
+  color: #fff;
+}
+
+textarea {
+  background: transparent;
+  color: #ffffff;
+  resize: none;
+  text-align: start;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid rgba(135, 207, 235, 0.489);
+}
+.textarea-label {
+  font-weight: bold;
+  color: #ffffffe4;
+  font-size: 13px;
+}
+.btn-3 {
+  padding: 10px 25px;
+  border: none;
+  background-color: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.wrapper-5 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+  color: #fff;
+  width: 100%;
+  font-size: 14px;
+  padding: 20px 5%;
+  border-top: 1px solid rgba(135, 207, 235, 0.489);
+}
+
+.wrapper-5 div {
+  display: flex;
+  gap: 20px;
+}
+
+.wrapper-5 div img {
+  width: 100px;
+}
